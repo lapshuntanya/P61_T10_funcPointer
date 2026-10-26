@@ -3,7 +3,18 @@
 bool isEven(int num) {
     return num % 2 == 0;
 }
-
+bool isOdd(int num) {
+    return num % 2 != 0;
+}
+bool isPos(int num) {
+    return num > 0;
+}
+bool isNeg(int num) {
+    return num < 0;
+}
+bool isEndZero(int num) {
+    return num % 10 == 0;
+}
 
 int main() {
 
@@ -23,6 +34,5 @@ int main() {
     cout << "Amount of positive numbers: " << myCountIf<int>(a, size, isPos) << endl;//додатніх
     cout << "Amount of negative numbers: " << myCountIf<int>(a, size, isNeg) << endl;//відʼємних
     cout << "Amount of numbers (ends 0): " << myCountIf<int>(a, size, isEndZero) << endl;//які закінчуються на 0
-
 
 }
